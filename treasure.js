@@ -72,7 +72,7 @@ function selection(pick) {
 
         lose.classList.remove("hide"); //shows message
 
-        score("lose"); //updates score
+        setTimeout(function() { score("lose"); }, 1000 );  //updates score with suspense
 
         setTimeout(function() { 
 
