@@ -36,7 +36,6 @@ body {
 
 .contact {
     bottom: -80px;
-    padding-bottom:15px;
     font-family: "raleway", "roboto";
     position: absolute;
     text-align:center;
@@ -260,6 +259,10 @@ main {
         margin:8px;
     }
 
+    .contact {
+        bottom:10px;
+    }
+
     h1 {
         font-size:16px;
         letter-spacing: 12px;
@@ -292,11 +295,5 @@ main {
         border-right:solid 3em transparent;
         border-top:solid 250px rgb(184, 202, 184);
         right:-47px;
-    }
-}
-
-@media (max-width: 400px) {
-    .contact {
-        bottom:0;
     }
 }
