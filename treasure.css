@@ -35,11 +35,12 @@ body {
 }
 
 .contact {
+    bottom: -80px;
     padding-bottom:15px;
     font-family: "raleway", "roboto";
     position: absolute;
-    bottom: -75px;
     text-align:center;
+    transition: 5s ease-in-out 1000ms;
 }
 
 .contact a {
