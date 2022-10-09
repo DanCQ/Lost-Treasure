@@ -9,6 +9,7 @@ let box8 = document.getElementById("8");
 let box9 = document.getElementById("9");
 
 let treasure = randomRange(1,9); //this is where the treasure is hidden
+let ocean = new Audio("assets/ocean.mp3"); //ocean sounds
 
 let correctCount = 1;
 let wrongCount = 1;
@@ -52,7 +53,6 @@ function selection(pick) {
     let lose = document.querySelector(".lose");
     let win = document.querySelector(".win");
 
-    let ocean = new Audio("assets/ocean.mp3");
     let open = new Audio("assets/open-chest.mp3");
     let treasureChest = new Audio("assets/treasure-chest.mp3");
     
@@ -77,8 +77,11 @@ function selection(pick) {
         setTimeout(function() { 
 
             lose.classList.add("hide"); //hides again
-            ocean.play(); //plays ocean sounds
 
         }, 2500 ); //waits 2.5 seconds
     }
 }
+
+window.onclick = function() {
+    ocean.play(); //plays ocean sounds
+};
