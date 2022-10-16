@@ -78,7 +78,7 @@ function selection(pick) {
 
             lose.classList.add("hide"); //hides again
 
-        }, 2500 ); //waits 2.5 seconds
+        }, 2000 ); //waits 2 seconds
     }
 }
 
