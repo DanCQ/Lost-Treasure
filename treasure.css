@@ -22,7 +22,7 @@ body {
     padding:25px 30px;
     text-align: center;
     text-shadow:0px 0px 2px #23001E;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 250ms;
 }
 
 .chest:hover {
@@ -58,7 +58,7 @@ h1 {
     min-width:280px;
     position:absolute;
     top:4rem;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 250ms;
 }
 
 h1, .chest, .lose, .ship {
@@ -82,7 +82,7 @@ h1, .chest, .lose, .ship {
     font-size:45px;
     height:370px;
     text-shadow: 0px 0px 2px bisque;
-    transition: 2s ease-in-out 500ms;
+    transition: 2s ease-in-out 250ms;
     width:480px;
 }
 
@@ -144,7 +144,7 @@ main {
     position:absolute;
     bottom: -24px;
     left:85px;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 250ms;
 }
 
 .ship-left {
@@ -155,7 +155,7 @@ main {
     left:-78px;
     top:50px;
     position:absolute;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 250ms;
 }
 
 .ship-right {
@@ -166,7 +166,7 @@ main {
     right:-78px;
     top:50px;
     position:absolute;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 250ms;
 }
 
 .win {
