@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google fonts: Chelsea Market, Raleway, Press Start 2P, Roboto -->
@@ -28,20 +27,19 @@
 
         <section class="score">
             <div>
-                wrong <span id="wrong">0</span>
+                wrong <span id="wrong"></span>
             </div>
 
             <div>
-                <span id="correct">0</span> correct 
+                <span id="correct"></span> correct 
             </div>
         </section>
 
-        <h1>
-                LOST TREASURE
-        </h1>
+        <h1>LOST TREASURE</h1>
 
         <div class="ship">
             <div class="ship-left"></div>
+
             <div class="puzzle">
                 <div class="chest" id="1">Mystery <br> Box 1</div>
                 <div class="chest" id="2">Mystery <br> Box 2</div>
@@ -52,16 +50,18 @@
                 <div class="chest" id="7">Mystery <br> Box 7</div>
                 <div class="chest" id="8">Mystery <br> Box 8</div>
                 <div class="chest" id="9">Mystery <br> Box 9</div>
-                <div class="lose hide ">
+
+                <div class="lose">
                     The Treasure is Lost <br>
                     Keep Looking . . .
                 </div>
             </div>
+
             <div class="ship-right"></div>
             <div class="ship-bottom"></div>
         </div>
         
-        <div class="win hide">
+        <div class="win">
             Hooray! <br>
             You Found <br> 
             The Treasure!
@@ -76,6 +76,7 @@
     </footer>
     
     <script type="text/javascript" src="treasure.js"></script>
+
 </body>
 
 </html>
