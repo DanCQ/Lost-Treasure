@@ -91,7 +91,7 @@ function selection(box) {
 
             lose.style.visibility = "hidden"; //hides again
 
-        }, 1750 ); //waits 2 seconds
+        }, 1750 ); //waits 1.75 seconds
     }
 }
 
