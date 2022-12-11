@@ -69,10 +69,6 @@ h1, .chest, .lose, .ship {
     transform-origin: 50% 100%;
 }
 
-.hide {
-    visibility:hidden;
-}
-
 .lose {
     background:linear-gradient(180deg, transparent, #B2936C 3%, transparent 30%, tan, transparent 70%, #B2936C 97%, transparent),
     repeating-linear-gradient(180deg,tan, tan 9.6%, #23001E 10%, tan 10.4%);
@@ -92,6 +88,7 @@ h1, .chest, .lose, .ship {
     font-weight: bolder;
     justify-content: center;
     position: absolute;
+    visibility:hidden;
     z-index:1;
 }
 
