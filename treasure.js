@@ -11,6 +11,10 @@ const correct = document.getElementById("correct");
 const wrong = document.getElementById("wrong");
 
 const ocean = new Audio("assets/ocean.mp3"); //ocean sounds
+ocean.volume = 0.8;
+const bonfire = new Audio("assets/bonfire.mp3"); //music
+bonfire.loop = true;
+bonfire.volume = 0.8;
 
 let treasure = randomRange(1,9); //this is where the treasure is hidden
 
@@ -63,6 +67,7 @@ function selection(box) {
     
     if (box == treasure) {
 
+        bonfire.volume = 0.4;
         treasureChest.play(); //plays sound
         win.style.visibility = "visible"; //shows message
 
@@ -70,6 +75,7 @@ function selection(box) {
 
         setTimeout(function() { 
 
+            bonfire.volume = 0.8;
             win.style.visibility = "hidden"; 
 
         }, 10000); //Gives time to celebrate, hides again
@@ -98,5 +104,5 @@ function selection(box) {
 window.onclick = function() {
 
     ocean.play(); //plays ocean sounds
-
+    bonfire.play(); //plays music
 };
