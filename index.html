@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google fonts: Chelsea Market, Raleway, Press Start 2P, Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Press+Start+2P&family=Raleway:wght@500&family=Roboto:wght@400&display=swap" >
-      
-    <!-- code for favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+        <!-- Google fonts: Chelsea Market, Raleway, Press Start 2P, Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Press+Start+2P&family=Raleway:wght@500&family=Roboto:wght@400&display=swap" >
+        
+        <!-- code for favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
 
-    <link rel="stylesheet" type="text/css" href="treasure.css">
-    
-    <title>Find the treasure</title>
-</head>
+        <link rel="stylesheet" type="text/css" href="treasure.css">
 
-<body>
+        <!-- defer loads html first then JS -->
+        <script defer type="text/javascript" src="treasure.js"></script>
+        
+        <title>Find the treasure</title>
+    </head>
 
-    <main>
+    <body>
 
-        <section class="score">
-            <div>
-                wrong <span id="wrong"></span>
-            </div>
+        <main>
 
-            <div>
-                <span id="correct"></span> correct 
-            </div>
-        </section>
-
-        <h1>LOST TREASURE</h1>
-
-        <div class="ship">
-            <div class="ship-left"></div>
-
-            <div class="puzzle">
-                <div class="chest" id="1">Mystery <br> Box 1</div>
-                <div class="chest" id="2">Mystery <br> Box 2</div>
-                <div class="chest" id="3">Mystery <br> Box 3</div>
-                <div class="chest" id="4">Mystery <br> Box 4</div>
-                <div class="chest" id="5">Mystery <br> Box 5</div>
-                <div class="chest" id="6">Mystery <br> Box 6</div>
-                <div class="chest" id="7">Mystery <br> Box 7</div>
-                <div class="chest" id="8">Mystery <br> Box 8</div>
-                <div class="chest" id="9">Mystery <br> Box 9</div>
-
-                <div class="lose">
-                    The Treasure is Lost <br>
-                    Keep Looking . . .
+            <section class="score">
+                <div>
+                    wrong <span id="wrong"></span>
                 </div>
+
+                <div>
+                    <span id="correct"></span> correct 
+                </div>
+            </section>
+
+            <h1>LOST TREASURE</h1>
+
+            <div class="ship">
+                <div class="ship-left"></div>
+
+                <div class="puzzle">
+                    <div class="chest" id="1">Mystery <br> Box 1</div>
+                    <div class="chest" id="2">Mystery <br> Box 2</div>
+                    <div class="chest" id="3">Mystery <br> Box 3</div>
+                    <div class="chest" id="4">Mystery <br> Box 4</div>
+                    <div class="chest" id="5">Mystery <br> Box 5</div>
+                    <div class="chest" id="6">Mystery <br> Box 6</div>
+                    <div class="chest" id="7">Mystery <br> Box 7</div>
+                    <div class="chest" id="8">Mystery <br> Box 8</div>
+                    <div class="chest" id="9">Mystery <br> Box 9</div>
+
+                    <div class="lose">
+                        The Treasure is Lost <br>
+                        Keep Looking . . .
+                    </div>
+                </div>
+
+                <div class="ship-right"></div>
+                <div class="ship-bottom"></div>
             </div>
-
-            <div class="ship-right"></div>
-            <div class="ship-bottom"></div>
-        </div>
+            
+            <div class="win">
+                Hooray! <br>
+                You Found <br> 
+                The Treasure!
+            </div>
+            
+        </main>
         
-        <div class="win">
-            Hooray! <br>
-            You Found <br> 
-            The Treasure!
-        </div>
-        
-    </main>
-    
-    <footer>
-        <a href="https://dany-cervantes-portfolio.pages.dev/" target="_blank">
-            Visit my portfolio
-        </a>
-    </footer>
-    
-    <script type="text/javascript" src="treasure.js"></script>
+        <footer>
+            <a href="https://dany-cervantes-portfolio.pages.dev/" target="_blank">
+                Visit my portfolio
+            </a>
+        </footer>
 
-</body>
+    </body>
 
 </html>
