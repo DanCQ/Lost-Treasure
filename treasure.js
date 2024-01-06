@@ -7,14 +7,19 @@ const box6 = document.getElementById("6");
 const box7 = document.getElementById("7");
 const box8 = document.getElementById("8");
 const box9 = document.getElementById("9");
+const lostTreasure = document.querySelector("h1");
+
 const correct = document.getElementById("correct");
 const wrong = document.getElementById("wrong");
 
+const bonfire = new Audio("assets/bonfire.mp3"); //background music
+bonfire.loop = true;
+bonfire.volume = 0.6;
+
 const ocean = new Audio("assets/ocean.mp3"); //ocean sounds
 ocean.volume = 0.8;
-const bonfire = new Audio("assets/bonfire.mp3"); //music
-bonfire.loop = true;
-bonfire.volume = 0.8;
+
+const pirate = new Audio("assets/pirate.mp3");
 
 let treasure = randomRange(1,9); //this is where the treasure is hidden
 
@@ -34,6 +39,12 @@ box7.onclick = function() { selection(7) };
 box8.onclick = function() { selection(8) };
 box9.onclick = function() { selection(9) };
 
+lostTreasure.onclick = function() {
+    if(pirate.paused) {
+        pirate.play();
+    }
+}
+
 
 //Returns a random number within a chosen range
 function randomRange(min, max) { 
@@ -46,6 +57,7 @@ function randomRange(min, max) {
 //compares the user's treasure selection to the randomly chosen selection
 function selection(box) { 
     
+    let arrg;
     let lose = document.querySelector(".lose");
     let win = document.querySelector(".win");
 
@@ -67,7 +79,7 @@ function selection(box) {
     
     if (box == treasure) {
 
-        bonfire.volume = 0.4;
+        bonfire.volume = 0.3;
         treasureChest.play(); //plays sound
         win.style.visibility = "visible"; //shows message
 
@@ -75,7 +87,7 @@ function selection(box) {
 
         setTimeout(function() { 
 
-            bonfire.volume = 0.8;
+            bonfire.volume = 0.6;
             win.style.visibility = "hidden"; 
 
         }, 10000); //Gives time to celebrate, hides again
@@ -86,6 +98,22 @@ function selection(box) {
 
         open.play(); //plays sound
         lose.style.visibility = "visible";  //shows message
+
+        if(ocean.paused) {
+            ocean.play();
+
+            if(pirate.paused) {
+                arrg = randomRange(0,1); //won't play everytime
+
+                if(arrg == 1) {
+
+                    setTimeout(function(){
+                        pirate.play();
+                    }, 600); //let's other sounds play first
+                }
+            }
+        }
+
 
         setTimeout(function() { 
 
@@ -103,6 +131,7 @@ function selection(box) {
 
 window.onclick = function() {
 
-    ocean.play(); //plays ocean sounds
-    bonfire.play(); //plays music
+    if(bonfire.paused) {
+        bonfire.play(); //plays music
+    }
 };
