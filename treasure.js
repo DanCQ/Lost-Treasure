@@ -13,7 +13,6 @@ const correct = document.getElementById("correct");
 const wrong = document.getElementById("wrong");
 
 const bonfire = new Audio("assets/bonfire.mp3"); //background music
-bonfire.loop = true;
 bonfire.volume = 0.6;
 
 const ocean = new Audio("assets/ocean.mp3"); //ocean sounds
